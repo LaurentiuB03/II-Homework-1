@@ -69,11 +69,11 @@ namespace Homework_1
             this.AddBootBtn = new System.Windows.Forms.Button();
             this.WelcomeLabel = new System.Windows.Forms.Label();
             this.FinishOrderBtn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.AddPantsBtn = new System.Windows.Forms.Button();
+            this.AddTshirtBtn = new System.Windows.Forms.Button();
+            this.AddBagBtn = new System.Windows.Forms.Button();
+            this.AddShadesBtn = new System.Windows.Forms.Button();
+            this.AddBackpackBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.BootsPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PantsPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TshirtPic)).BeginInit();
@@ -213,6 +213,7 @@ namespace Homework_1
             this.IncBoot.Text = "+";
             this.IncBoot.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.IncBoot.UseVisualStyleBackColor = true;
+            this.IncBoot.Click += new System.EventHandler(this.IncBoot_Click);
             // 
             // DecBoot
             // 
@@ -224,6 +225,7 @@ namespace Homework_1
             this.DecBoot.Text = "-";
             this.DecBoot.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.DecBoot.UseVisualStyleBackColor = true;
+            this.DecBoot.Click += new System.EventHandler(this.DecBoot_Click);
             // 
             // IncShades
             // 
@@ -235,6 +237,7 @@ namespace Homework_1
             this.IncShades.Text = "+";
             this.IncShades.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.IncShades.UseVisualStyleBackColor = true;
+            this.IncShades.Click += new System.EventHandler(this.IncShades_Click);
             // 
             // IncBackpack
             // 
@@ -246,6 +249,7 @@ namespace Homework_1
             this.IncBackpack.Text = "+";
             this.IncBackpack.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.IncBackpack.UseVisualStyleBackColor = true;
+            this.IncBackpack.Click += new System.EventHandler(this.IncBackpack_Click);
             // 
             // IncPants
             // 
@@ -257,6 +261,7 @@ namespace Homework_1
             this.IncPants.Text = "+";
             this.IncPants.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.IncPants.UseVisualStyleBackColor = true;
+            this.IncPants.Click += new System.EventHandler(this.IncPants_Click);
             // 
             // IncTshirt
             // 
@@ -268,6 +273,7 @@ namespace Homework_1
             this.IncTshirt.Text = "+";
             this.IncTshirt.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.IncTshirt.UseVisualStyleBackColor = true;
+            this.IncTshirt.Click += new System.EventHandler(this.IncTshirt_Click);
             // 
             // IncBag
             // 
@@ -279,6 +285,7 @@ namespace Homework_1
             this.IncBag.Text = "+";
             this.IncBag.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.IncBag.UseVisualStyleBackColor = true;
+            this.IncBag.Click += new System.EventHandler(this.IncBag_Click);
             // 
             // DecBackpack
             // 
@@ -290,6 +297,7 @@ namespace Homework_1
             this.DecBackpack.Text = "-";
             this.DecBackpack.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.DecBackpack.UseVisualStyleBackColor = true;
+            this.DecBackpack.Click += new System.EventHandler(this.DecBackpack_Click);
             // 
             // DecShades
             // 
@@ -301,6 +309,7 @@ namespace Homework_1
             this.DecShades.Text = "-";
             this.DecShades.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.DecShades.UseVisualStyleBackColor = true;
+            this.DecShades.Click += new System.EventHandler(this.DecShades_Click);
             // 
             // DecBag
             // 
@@ -312,6 +321,7 @@ namespace Homework_1
             this.DecBag.Text = "-";
             this.DecBag.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.DecBag.UseVisualStyleBackColor = true;
+            this.DecBag.Click += new System.EventHandler(this.DecBag_Click);
             // 
             // DecPants
             // 
@@ -323,6 +333,7 @@ namespace Homework_1
             this.DecPants.Text = "-";
             this.DecPants.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.DecPants.UseVisualStyleBackColor = true;
+            this.DecPants.Click += new System.EventHandler(this.DecPants_Click);
             // 
             // DecShirt
             // 
@@ -334,6 +345,7 @@ namespace Homework_1
             this.DecShirt.Text = "-";
             this.DecShirt.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.DecShirt.UseVisualStyleBackColor = true;
+            this.DecShirt.Click += new System.EventHandler(this.DecShirt_Click);
             // 
             // BootText
             // 
@@ -483,65 +495,65 @@ namespace Homework_1
             this.FinishOrderBtn.Text = "Finalizeaza comanda";
             this.FinishOrderBtn.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // AddPantsBtn
             // 
-            this.button1.BackColor = System.Drawing.Color.LimeGreen;
-            this.button1.Font = new System.Drawing.Font("Calisto MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(576, 325);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(140, 38);
-            this.button1.TabIndex = 45;
-            this.button1.Text = "Adauga in cos";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = false;
+            this.AddPantsBtn.BackColor = System.Drawing.Color.LimeGreen;
+            this.AddPantsBtn.Font = new System.Drawing.Font("Calisto MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddPantsBtn.Location = new System.Drawing.Point(576, 325);
+            this.AddPantsBtn.Name = "AddPantsBtn";
+            this.AddPantsBtn.Size = new System.Drawing.Size(140, 38);
+            this.AddPantsBtn.TabIndex = 45;
+            this.AddPantsBtn.Text = "Adauga in cos";
+            this.AddPantsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AddPantsBtn.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // AddTshirtBtn
             // 
-            this.button2.BackColor = System.Drawing.Color.LimeGreen;
-            this.button2.Font = new System.Drawing.Font("Calisto MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(907, 325);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(140, 38);
-            this.button2.TabIndex = 46;
-            this.button2.Text = "Adauga in cos";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = false;
+            this.AddTshirtBtn.BackColor = System.Drawing.Color.LimeGreen;
+            this.AddTshirtBtn.Font = new System.Drawing.Font("Calisto MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddTshirtBtn.Location = new System.Drawing.Point(907, 325);
+            this.AddTshirtBtn.Name = "AddTshirtBtn";
+            this.AddTshirtBtn.Size = new System.Drawing.Size(140, 38);
+            this.AddTshirtBtn.TabIndex = 46;
+            this.AddTshirtBtn.Text = "Adauga in cos";
+            this.AddTshirtBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AddTshirtBtn.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // AddBagBtn
             // 
-            this.button3.BackColor = System.Drawing.Color.LimeGreen;
-            this.button3.Font = new System.Drawing.Font("Calisto MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(237, 619);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(140, 38);
-            this.button3.TabIndex = 47;
-            this.button3.Text = "Adauga in cos";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.UseVisualStyleBackColor = false;
+            this.AddBagBtn.BackColor = System.Drawing.Color.LimeGreen;
+            this.AddBagBtn.Font = new System.Drawing.Font("Calisto MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddBagBtn.Location = new System.Drawing.Point(237, 619);
+            this.AddBagBtn.Name = "AddBagBtn";
+            this.AddBagBtn.Size = new System.Drawing.Size(140, 38);
+            this.AddBagBtn.TabIndex = 47;
+            this.AddBagBtn.Text = "Adauga in cos";
+            this.AddBagBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AddBagBtn.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // AddShadesBtn
             // 
-            this.button4.BackColor = System.Drawing.Color.LimeGreen;
-            this.button4.Font = new System.Drawing.Font("Calisto MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(561, 620);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(140, 38);
-            this.button4.TabIndex = 48;
-            this.button4.Text = "Adauga in cos";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.UseVisualStyleBackColor = false;
+            this.AddShadesBtn.BackColor = System.Drawing.Color.LimeGreen;
+            this.AddShadesBtn.Font = new System.Drawing.Font("Calisto MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddShadesBtn.Location = new System.Drawing.Point(561, 620);
+            this.AddShadesBtn.Name = "AddShadesBtn";
+            this.AddShadesBtn.Size = new System.Drawing.Size(140, 38);
+            this.AddShadesBtn.TabIndex = 48;
+            this.AddShadesBtn.Text = "Adauga in cos";
+            this.AddShadesBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AddShadesBtn.UseVisualStyleBackColor = false;
             // 
-            // button5
+            // AddBackpackBtn
             // 
-            this.button5.BackColor = System.Drawing.Color.LimeGreen;
-            this.button5.Font = new System.Drawing.Font("Calisto MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(907, 620);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(140, 38);
-            this.button5.TabIndex = 49;
-            this.button5.Text = "Adauga in cos";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = false;
+            this.AddBackpackBtn.BackColor = System.Drawing.Color.LimeGreen;
+            this.AddBackpackBtn.Font = new System.Drawing.Font("Calisto MT", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddBackpackBtn.Location = new System.Drawing.Point(907, 620);
+            this.AddBackpackBtn.Name = "AddBackpackBtn";
+            this.AddBackpackBtn.Size = new System.Drawing.Size(140, 38);
+            this.AddBackpackBtn.TabIndex = 49;
+            this.AddBackpackBtn.Text = "Adauga in cos";
+            this.AddBackpackBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.AddBackpackBtn.UseVisualStyleBackColor = false;
             // 
             // Form1
             // 
@@ -549,11 +561,11 @@ namespace Homework_1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1156, 687);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.AddBackpackBtn);
+            this.Controls.Add(this.AddShadesBtn);
+            this.Controls.Add(this.AddBagBtn);
+            this.Controls.Add(this.AddTshirtBtn);
+            this.Controls.Add(this.AddPantsBtn);
             this.Controls.Add(this.FinishOrderBtn);
             this.Controls.Add(this.WelcomeLabel);
             this.Controls.Add(this.AddBootBtn);
@@ -647,11 +659,11 @@ namespace Homework_1
         private System.Windows.Forms.Button AddBootBtn;
         private System.Windows.Forms.Label WelcomeLabel;
         private System.Windows.Forms.Button FinishOrderBtn;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button AddPantsBtn;
+        private System.Windows.Forms.Button AddTshirtBtn;
+        private System.Windows.Forms.Button AddBagBtn;
+        private System.Windows.Forms.Button AddShadesBtn;
+        private System.Windows.Forms.Button AddBackpackBtn;
     }
 }
 
