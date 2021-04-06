@@ -8,3 +8,4 @@ E:\an3\Sem2\II\Laburi\Tema 1\Homework 1\Homework 1\obj\Debug\Homework 1.csproj.G
 E:\an3\Sem2\II\Laburi\Tema 1\Homework 1\Homework 1\obj\Debug\Homework 1.csproj.CoreCompileInputs.cache
 E:\an3\Sem2\II\Laburi\Tema 1\Homework 1\Homework 1\obj\Debug\Homework 1.exe
 E:\an3\Sem2\II\Laburi\Tema 1\Homework 1\Homework 1\obj\Debug\Homework 1.pdb
+E:\an3\Sem2\II\Laburi\Tema 1\Homework 1\Homework 1\obj\Debug\Homework_1.Form2.resources

@@ -405,61 +405,61 @@ namespace Homework_1
             // 
             this.BootPrice.AutoSize = true;
             this.BootPrice.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BootPrice.Location = new System.Drawing.Point(258, 265);
+            this.BootPrice.Location = new System.Drawing.Point(280, 265);
             this.BootPrice.Name = "BootPrice";
-            this.BootPrice.Size = new System.Drawing.Size(91, 25);
+            this.BootPrice.Size = new System.Drawing.Size(45, 25);
             this.BootPrice.TabIndex = 31;
-            this.BootPrice.Text = "800 RON";
+            this.BootPrice.Text = "800";
             // 
             // BagPrice
             // 
             this.BagPrice.AutoSize = true;
             this.BagPrice.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BagPrice.Location = new System.Drawing.Point(258, 563);
+            this.BagPrice.Location = new System.Drawing.Point(280, 546);
             this.BagPrice.Name = "BagPrice";
-            this.BagPrice.Size = new System.Drawing.Size(91, 25);
+            this.BagPrice.Size = new System.Drawing.Size(45, 25);
             this.BagPrice.TabIndex = 32;
-            this.BagPrice.Text = "450 RON";
+            this.BagPrice.Text = "450";
             // 
             // ShadesPrice
             // 
             this.ShadesPrice.AutoSize = true;
             this.ShadesPrice.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShadesPrice.Location = new System.Drawing.Point(583, 562);
+            this.ShadesPrice.Location = new System.Drawing.Point(613, 546);
             this.ShadesPrice.Name = "ShadesPrice";
-            this.ShadesPrice.Size = new System.Drawing.Size(80, 25);
+            this.ShadesPrice.Size = new System.Drawing.Size(34, 25);
             this.ShadesPrice.TabIndex = 33;
-            this.ShadesPrice.Text = "45 RON";
+            this.ShadesPrice.Text = "45";
             // 
             // BackpackPrice
             // 
             this.BackpackPrice.AutoSize = true;
             this.BackpackPrice.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BackpackPrice.Location = new System.Drawing.Point(916, 563);
+            this.BackpackPrice.Location = new System.Drawing.Point(938, 546);
             this.BackpackPrice.Name = "BackpackPrice";
-            this.BackpackPrice.Size = new System.Drawing.Size(91, 25);
+            this.BackpackPrice.Size = new System.Drawing.Size(45, 25);
             this.BackpackPrice.TabIndex = 34;
-            this.BackpackPrice.Text = "650 RON";
+            this.BackpackPrice.Text = "650";
             // 
             // PantsPrice
             // 
             this.PantsPrice.AutoSize = true;
             this.PantsPrice.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PantsPrice.Location = new System.Drawing.Point(583, 269);
+            this.PantsPrice.Location = new System.Drawing.Point(602, 266);
             this.PantsPrice.Name = "PantsPrice";
-            this.PantsPrice.Size = new System.Drawing.Size(91, 25);
+            this.PantsPrice.Size = new System.Drawing.Size(45, 25);
             this.PantsPrice.TabIndex = 35;
-            this.PantsPrice.Text = "100 RON";
+            this.PantsPrice.Text = "100";
             // 
             // TshirtPrice
             // 
             this.TshirtPrice.AutoSize = true;
             this.TshirtPrice.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TshirtPrice.Location = new System.Drawing.Point(911, 269);
+            this.TshirtPrice.Location = new System.Drawing.Point(938, 269);
             this.TshirtPrice.Name = "TshirtPrice";
-            this.TshirtPrice.Size = new System.Drawing.Size(80, 25);
+            this.TshirtPrice.Size = new System.Drawing.Size(34, 25);
             this.TshirtPrice.TabIndex = 36;
-            this.TshirtPrice.Text = "65 RON";
+            this.TshirtPrice.Text = "65";
             // 
             // AddBootBtn
             // 
@@ -472,6 +472,7 @@ namespace Homework_1
             this.AddBootBtn.Text = "Adauga in cos";
             this.AddBootBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AddBootBtn.UseVisualStyleBackColor = false;
+            this.AddBootBtn.Click += new System.EventHandler(this.AddBootBtn_Click);
             // 
             // WelcomeLabel
             // 
@@ -479,7 +480,7 @@ namespace Homework_1
             this.WelcomeLabel.Font = new System.Drawing.Font("Imprint MT Shadow", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.WelcomeLabel.Location = new System.Drawing.Point(21, 30);
             this.WelcomeLabel.Name = "WelcomeLabel";
-            this.WelcomeLabel.Size = new System.Drawing.Size(169, 40);
+            this.WelcomeLabel.Size = new System.Drawing.Size(167, 39);
             this.WelcomeLabel.TabIndex = 43;
             this.WelcomeLabel.Text = "Welcome!";
             this.WelcomeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -494,6 +495,7 @@ namespace Homework_1
             this.FinishOrderBtn.TabIndex = 44;
             this.FinishOrderBtn.Text = "Finalizeaza comanda";
             this.FinishOrderBtn.UseVisualStyleBackColor = false;
+            this.FinishOrderBtn.Click += new System.EventHandler(this.FinishOrderBtn_Click);
             // 
             // AddPantsBtn
             // 
@@ -506,6 +508,7 @@ namespace Homework_1
             this.AddPantsBtn.Text = "Adauga in cos";
             this.AddPantsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AddPantsBtn.UseVisualStyleBackColor = false;
+            this.AddPantsBtn.Click += new System.EventHandler(this.AddPantsBtn_Click);
             // 
             // AddTshirtBtn
             // 
@@ -518,6 +521,7 @@ namespace Homework_1
             this.AddTshirtBtn.Text = "Adauga in cos";
             this.AddTshirtBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AddTshirtBtn.UseVisualStyleBackColor = false;
+            this.AddTshirtBtn.Click += new System.EventHandler(this.AddTshirtBtn_Click);
             // 
             // AddBagBtn
             // 
@@ -530,6 +534,7 @@ namespace Homework_1
             this.AddBagBtn.Text = "Adauga in cos";
             this.AddBagBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AddBagBtn.UseVisualStyleBackColor = false;
+            this.AddBagBtn.Click += new System.EventHandler(this.AddBagBtn_Click);
             // 
             // AddShadesBtn
             // 
@@ -542,6 +547,7 @@ namespace Homework_1
             this.AddShadesBtn.Text = "Adauga in cos";
             this.AddShadesBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AddShadesBtn.UseVisualStyleBackColor = false;
+            this.AddShadesBtn.Click += new System.EventHandler(this.AddShadesBtn_Click);
             // 
             // AddBackpackBtn
             // 
@@ -554,6 +560,7 @@ namespace Homework_1
             this.AddBackpackBtn.Text = "Adauga in cos";
             this.AddBackpackBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.AddBackpackBtn.UseVisualStyleBackColor = false;
+            this.AddBackpackBtn.Click += new System.EventHandler(this.AddBackpackBtn_Click);
             // 
             // Form1
             // 
